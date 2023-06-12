@@ -12,26 +12,7 @@
     <div id="root">not renderd</div>
     <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
-    <script>
-
-      const App = () => { // capitalize your component name
-        // this function defines the `App` component
-        // it takes no arguments and returns a `React element`
-        return React.createElement(
-          "div",
-          {},
-          // this creates a `React element` that represents a `div` element
-          React.createElement("h1", {}, "Adopt Me!")
-        )
-      }
-
-      // this gets the DOM element with the ID "root"
-      const container = document.getElementById("root");
-      // this creates a `React root` from the DOM element
-      const root = ReactDOM.createRoot(container);
-      // this renders the `App` component to the DOM
-      root.render(React.createElement(App));
-    </script>
+    <script src="App.js"></script>
   </body>
 
 </html>
